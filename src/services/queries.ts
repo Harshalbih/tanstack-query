@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query"
-import { getTodosIds } from "./api"
+import { getTodosIds } from "./api.ts"
 
-export const useTodosIds(){
+export function useTodosIds(){
     return useQuery({
         queryKey: ['todos'],
         queryFn: getTodosIds,
